@@ -1,0 +1,26 @@
+#cloud-config
+autoinstall:
+    version: 1
+    identity:
+        realname: 'Ubuntu-home'
+        hostname: ubuntu-desktop
+        username: Urasono
+        password: '$1$MJ8gIPoi$jNorcV8PXNkDV6zjqLoUn0'
+    locale: pt_BR.utf8
+    keyboard:
+        layout: br
+    timezone: "America/Sao_Paulo"
+    packages:
+        - git
+        - wget
+        - neofetch
+        - htop
+        - libreoffice
+        - mpv
+        
+    codecs:
+        install: true
+    drivers:
+        install: true
+    updates: all
+    shutdown: reboot
